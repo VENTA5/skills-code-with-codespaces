@@ -1,10 +1,17 @@
-     steps:
-      # Check that there is at least one header in the markdown file.
-      - name: Check markdown syntax, header
-        uses: skills/action-check-file@v1
-        with:
-          file: "index.md"
-          search: "# [a-zA-Z0-9]",
+,
+ // Add the IDs of extensions you want installed when the container is created.
+ "customizations": {
+     "vscode": {
+         "extensions": [
+             "GitHub.copilot"
+         ]
+     },
+     "codespaces": {
+         "openFiles": [
+             "codespace.md"
+         ]
+     }
+ } ,
  // Add the IDs of extensions you want installed when the container is created.
  "customizations": {
      "vscode": {
